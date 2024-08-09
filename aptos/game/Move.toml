@@ -1,0 +1,9 @@
+[package]
+name = "game"
+version = "0.0.0"
+
+[addresses]
+game = "0x07fe4d5d7ceb06d318e54d411558edf5887ab6e9d26b5ac96d7bc0b3d8202eed"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev ="testnet" }
