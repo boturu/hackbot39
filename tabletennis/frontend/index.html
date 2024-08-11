@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Table Tennis Game</h1>
+        <div class="scoreboard">
+            <div class="player" id="player1">
+                <h2>Player 1</h2>
+                <span class="score" id="player1-score">0</span>
+            </div>
+            <div class="player" id="player2">
+                <h2>Player 2</h2>
+                <span class="score" id="player2-score">0</span>
+            </div>
+        </div>
+        <div class="server">
+            <h2>Current Server: <span id="current-server">Player 1</span></h2>
+        </div>
+        <div class="controls">
+            <button id="player1-button">Player 1 Scores</button>
+            <button id="player2-button">Player 2 Scores</button>
+        </div>
+        <div class="status">
+            <h2>Game Status: <span id="game-status">Ongoing</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
