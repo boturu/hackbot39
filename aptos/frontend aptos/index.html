@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            cursor: pointer;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Table Tennis Game</h1>
+        <div>
+            <h2>Create Player</h2>
+            <input type="text" id="create-account-id" placeholder="Account ID">
+            <input type="text" id="create-name" placeholder="Name">
+            <button onclick="createPlayer()">Create Player</button>
+        </div>
+        <div>
+            <h2>Update Score</h2>
+            <input type="text" id="update-account-id" placeholder="Account ID">
+            <input type="number" id="update-score" placeholder="Score">
+            <button onclick="updateScore()">Update Score</button>
+        </div>
+        <div>
+            <h2>Get Score</h2>
+            <input type="text" id="get-account-id" placeholder="Account ID">
+            <button onclick="getScore()">Get Score</button>
+            <p id="player-score"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
